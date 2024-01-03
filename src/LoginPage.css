@@ -1,0 +1,164 @@
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #e4e0e0;
+    position: relative;
+    overflow: hidden;
+    animation: moveBackground 20s linear infinite;
+  }
+
+  h1 {
+    color: #ebdddd;
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px; /* Increase padding for a more comfortable input */
+    margin-top: 6px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #cae2cb;
+    color: white;
+    padding: 40px 40px ; /* Increase padding for a larger button */
+    border: 1px solid #fbb6a0;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 26px;
+    
+    
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  button:hover {
+    background-color: #7e668b;
+  }
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #47384e;
+    overflow: hidden;
+}
+
+.background span {
+    width: 34vmin;
+    height: 34vmin;
+    border-radius: 34vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 34;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #E45A84;
+    top: 33%;
+    left: 31%;
+    animation-duration: 165s;
+    animation-delay: -62s;
+    transform-origin: 17vw 11vh;
+    box-shadow: -68vmin 0 8.514491291704973vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #583C87;
+    top: 75%;
+    left: 95%;
+    animation-duration: 72s;
+    animation-delay: -107s;
+    transform-origin: 20vw 11vh;
+    box-shadow: -68vmin 0 9.411431482763964vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #583C87;
+    top: 43%;
+    left: 29%;
+    animation-duration: 158s;
+    animation-delay: -6s;
+    transform-origin: -1vw -11vh;
+    box-shadow: 68vmin 0 8.89750891781008vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #fbb6a0;
+    top: 60%;
+    left: 3%;
+    animation-duration: 36s;
+    animation-delay: -11s;
+    transform-origin: 4vw -1vh;
+    box-shadow: -68vmin 0 9.497655704816747vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #fbb6a0;
+    top: 88%;
+    left: 49%;
+    animation-duration: 92s;
+    animation-delay: -128s;
+    transform-origin: 24vw 2vh;
+    box-shadow: -68vmin 0 9.160762639203297vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #FFACAC;
+    top: 27%;
+    left: 19%;
+    animation-duration: 71s;
+    animation-delay: -120s;
+    transform-origin: 13vw 21vh;
+    box-shadow: 68vmin 0 8.608286010311971vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #E45A84;
+    top: 51%;
+    left: 60%;
+    animation-duration: 63s;
+    animation-delay: -68s;
+    transform-origin: 15vw -6vh;
+    box-shadow: -68vmin 0 9.263243205712945vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #583C87;
+    top: 49%;
+    left: 19%;
+    animation-duration: 79s;
+    animation-delay: -85s;
+    transform-origin: -11vw 15vh;
+    box-shadow: -68vmin 0 8.533019924116745vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #FFACAC;
+    top: 28%;
+    left: 18%;
+    animation-duration: 54s;
+    animation-delay: -59s;
+    transform-origin: 2vw -24vh;
+    box-shadow: 68vmin 0 9.202324856257507vmin currentColor;
+}

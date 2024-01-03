@@ -1,0 +1,33 @@
+/* src/components/Calculator.css */
+.calculator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .calculation-list-item {
+    animation: fadeOut 1s forwards;
+    margin-bottom: 8px;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
