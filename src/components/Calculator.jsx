@@ -95,12 +95,13 @@ const Calculator = () => {
 
   return (
     <motion.main
-      animate={{ x: shake ? [0, -5, 5, -5, 5, -5, 5, -5, 5, -5, 5, 0] : 0 }}
-      transition={{ duration: 0.5 }}
-      className="bg-gradient-to-l from-indigo-500 to-sky-500 animate-background flex items-center justify-center h-screen w-screen px-2 py-24 md:px-8"
+    animate={{ x: shake ? [0, -5, 5, -5, 5, -5, 5, -5, 5, -5, 5, 0] : 0 }}
+    transition={{ duration: 0.5 }}
+    className="bg-gradient-to-l from-indigo-500 to-sky-500 animate-background flex items-center justify-center h-screen w-screen px-2 py-24 md:px-8"
     >
       <div className="w-full md:w-96 bg-white bg-opacity-40 backdrop-blur-lg rounded-xl drop-shadow-lg text-center">
         <div className="p-5 overflow-hidden text-white">
+          <h2>Calculators</h2>
           <Display value={result} />
           <Buttons Buttonclicked={handleButtonClick} />
           <CalculationList calculations={Array.from(new Set(calculations))} />
